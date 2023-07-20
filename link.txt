@@ -1,0 +1,7 @@
+# Chạy toàn bộ dòng trong file txt:
+import subprocess
+with open('/content/SD-CSDM/html/Extension.txt', 'r') as file:
+    extensions = file.readlines()
+    for extension in extensions:
+        subprocess.run(extension.strip(), shell=True)
+# ==================================================================================================>
